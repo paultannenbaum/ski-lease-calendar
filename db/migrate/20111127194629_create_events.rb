@@ -7,8 +7,6 @@ class CreateEvents < ActiveRecord::Migration
       t.boolean :all_day
       t.integer :friends
       t.integer :carpool_seats
-      t.datetime :created_at
-      t.datetime :updated_at
 
       t.timestamps
     end

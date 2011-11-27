@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(:version => 20111127194629) do
     t.string   "name"
     t.datetime "start_at"
     t.datetime "end_at"
-    t.boolean  "all_day"
+    t.boolean  "all_day",       :default => true
     t.integer  "friends"
     t.integer  "carpool_seats"
     t.datetime "created_at"
