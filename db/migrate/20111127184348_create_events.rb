@@ -4,7 +4,7 @@ class CreateEvents < ActiveRecord::Migration
       t.string :name
       t.datetime :start_at
       t.datetime :end_at
-      t.boolean :all_day, :default => false
+      t.boolean :all_day
       t.integer :friends
       t.integer :carpool_seats
       
