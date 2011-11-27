@@ -11,13 +11,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111127184348) do
+ActiveRecord::Schema.define(:version => 20111127194629) do
 
   create_table "events", :force => true do |t|
     t.string   "name"
     t.datetime "start_at"
     t.datetime "end_at"
-    t.boolean  "all_day",       :default => false
+    t.boolean  "all_day"
     t.integer  "friends"
     t.integer  "carpool_seats"
     t.datetime "created_at"
