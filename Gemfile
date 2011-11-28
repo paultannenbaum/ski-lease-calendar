@@ -6,6 +6,7 @@ gem 'sqlite3'
 gem 'jquery-rails'
 gem 'event-calendar', :require => 'event_calendar'
 gem "haml", "~> 3.1.3"
+gem 'validates_timeliness', '~> 3.0.2'
 
 # Gems used only for assets and not required
 # in production environments by default.

@@ -7,7 +7,7 @@ table#events_table {
   border-collapse: collapse;
   tr {
    &:nth-child(odd) {
-    background-color: lightblue; 
+    background-color: #DCE7E8; 
    } 
   }
   th, td {
@@ -15,7 +15,7 @@ table#events_table {
     text-align: center;
   }
   th {
-    background-color: darkgrey;
+    background-color: #343838;
     color: white;
   }
 }
@@ -31,10 +31,5 @@ form {
       margin-top: 5px;
     }
   }
-}
-
-.button {
-  display: block;
-  margin-bottom: 20px;
 }
 

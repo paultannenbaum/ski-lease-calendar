@@ -7,9 +7,18 @@
  *= require events 
 */
 
+/*
+// $dark: #343838;
+// $base_dark: #005F6B;
+// $base_mid: #008C9E;
+// $base_light: #00B4CC;
+// $action: #00DFFC;
+*/
+
+
 body {
-  background-color: #4B7399;
-  font-family: Verdana, Helvetica, Arial;
+  background-color: #005F6B;
+  font-family: sans-serif;
   font-size: 14px;
 }
 
@@ -18,7 +27,8 @@ a img {
 }
 
 a {
-  color: #0000FF;
+  color: #008C9E;
+  text-decoration: none
 }
 
 .clear {
@@ -55,7 +65,7 @@ a {
   display: inline;
 }
 
-.error_messages {
+#error_explanation {
   width: 400px;
   border: 2px solid #CF0000;
   padding: 0px;
@@ -65,7 +75,7 @@ a {
   font-size: 12px;
 }
 
-.error_messages h2 {
+#error_explanation h2 {
   text-align: left;
   font-weight: bold;
   padding: 5px 10px;
@@ -75,10 +85,34 @@ a {
   color: #fff;
 }
 
-.error_messages p {
+#error_explanation p {
   margin: 8px 10px;
 }
 
-.error_messages ul {
+#error_explanation ul {
   margin: 0;
 }
+
+#error_explanation ul li {
+  margin: 5px 0;
+} 
+
+.button {
+  display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	background-color: #F77825;
+	color: white;
+	margin-bottom: 30px;
+}
+

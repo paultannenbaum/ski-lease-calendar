@@ -1,7 +1,7 @@
-<h1>Ski Lease Calendar</h1>
+<h1 class="calendar_head">Ski Lease Calendar - Calendar View</h1>
 
-<%= link_to 'Create a new entry', new_event_path, :class => 'button' %> 
+<%= link_to 'Create a new entry', new_event_path, :class => 'button cal_button' %> 
 
 <%= raw(event_calendar) %>
 
-<%= link_to 'List View', events_path %> 
+<%= link_to 'List View', events_path, :class => 'marNorth' %> 
