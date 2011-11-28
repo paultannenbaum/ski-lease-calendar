@@ -1,2 +1,5 @@
-Use this README file to introduce your application and point to useful places in the API for learning more.
-Run "rake doc:app" to generate API documentation for your models, controllers, helpers, and libraries.
+Simple App to help manage who is using our ski lease. 
+
+App is a tool specifying who is using the cabin, the dates they will be there, how many guests they are bringing with them, and if they have any extra seats in their automobile. Has calendar and list style views. 
+
+This app is using the event calendar plugin: https://github.com/elevation/event_calendar
