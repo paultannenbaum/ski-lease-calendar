@@ -21,8 +21,10 @@ module CalendarHelper
     calendar event_calendar_opts do |args|
       event, day = args[:event], args[:day]
       html = %(<a href="/events/#{event.id}" title="#{h(event.name)}">)
-      html << display_event_time(event, day)
-      html << %(#{h(event.name)}</a>)
+      html << %(#{h(event.name)})
+      html << %( &amp; #{pluralize(h(event.friends), 'guest')} ) if event.friends > 0
+      html << %( &amp; #{pluralize(h(event.carpool_seats), 'extra seat')} ) if event.carpool_seats > 0
+      html << %(</a>)
       html
     end
   end

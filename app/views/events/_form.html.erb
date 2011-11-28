@@ -12,27 +12,23 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br />
+    <%= f.label :Name %><br />
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :start_at %><br />
+    <%= f.label :Day_your_heading_up_to_Tahoe %><br />
     <%= f.datetime_select :start_at %>
   </div>
   <div class="field">
-    <%= f.label :end_at %><br />
+    <%= f.label :Day_your_heading_back_to_the_Bay %><br />
     <%= f.datetime_select :end_at %>
   </div>
   <div class="field">
-    <%= f.label :all_day %><br />
-    <%= f.check_box :all_day %>
-  </div>
-  <div class="field">
-    <%= f.label :friends %><br />
+    <%= f.label :Number_of_guests_your_bringing %><br />
     <%= f.number_field :friends %>
   </div>
   <div class="field">
-    <%= f.label :carpool_seats %><br />
+    <%= f.label :Number_of_extra_seats_available_for_carpool %><br />
     <%= f.number_field :carpool_seats %>
   </div>
   <div class="actions">

@@ -5,8 +5,8 @@ class CreateEvents < ActiveRecord::Migration
       t.datetime :start_at
       t.datetime :end_at
       t.boolean :all_day
-      t.integer :friends
-      t.integer :carpool_seats
+      t.integer :friends, :default => 0
+      t.integer :carpool_seats, :default => 0
       
       t.timestamps
     end

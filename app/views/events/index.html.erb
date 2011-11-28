@@ -1,15 +1,13 @@
 <h1>Listing events</h1>
+<%= link_to 'New Entry', new_event_path, :class => 'button' %>
 
-<table>
+<table id="events_table">
   <tr>
-    <th>Name</th>
-    <th>Start at</th>
-    <th>End at</th>
-    <th>All day</th>
-    <th>Friends</th>
+    <th>Person</th>
+    <th>Date heading to Tahoe</th>
+    <th>Date heading back to the Bay</th>
+    <th>Guests</th>
     <th>Carpool seats</th>
-    <th>Created at</th>
-    <th>Updated at</th>
     <th></th>
     <th></th>
     <th></th>
@@ -18,20 +16,16 @@
 <% @events.each do |event| %>
   <tr>
     <td><%= event.name %></td>
-    <td><%= event.start_at %></td>
-    <td><%= event.end_at %></td>
-    <td><%= event.all_day %></td>
+    <td><%= event.start_at.strftime("%m/%d/%Y at %I:%M%p") %></td>
+    <td><%= event.end_at.strftime("%m/%d/%Y at %I:%M%p") %></td>
     <td><%= event.friends %></td>
     <td><%= event.carpool_seats %></td>
-    <td><%= event.created_at %></td>
-    <td><%= event.updated_at %></td>
-    <td><%= link_to 'Show', event %></td>
+    <td><%= link_to 'Details', event %></td>
     <td><%= link_to 'Edit', edit_event_path(event) %></td>
-    <td><%= link_to 'Destroy', event, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= link_to 'Delete', event, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
-
-<%= link_to 'New Event', new_event_path %>
+<%= link_to 'Calendar View', calendar_path %>
