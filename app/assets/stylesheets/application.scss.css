@@ -1,18 +1,6 @@
 /*
- * This is a manifest file that'll automatically include all the stylesheets available in this directory
- * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
- * the top of the compiled file, but it's generally better to create a new file per style scope.
- *= require_self
- *= require calendar 
- *= require events 
-*/
-
-/*
-// $dark: #343838;
-// $base_dark: #005F6B;
-// $base_mid: #008C9E;
-// $base_light: #00B4CC;
-// $action: #00DFFC;
+*= require_self
+*= require_tree .
 */
 
 
