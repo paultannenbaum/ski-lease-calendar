@@ -2,32 +2,35 @@
 
 <h1>Ski Lease Calendar - Single Entry</h1>
 
-<p>
-  <b>Name:</b>
-  <%= @event.name %>
-</p>
+<div class="body">
+  <p>
+    <b>Name:</b>
+    <%= @event.name %>
+  </p>
 
-<p>
-  <b>Leaving for Tahoe:</b>
-  <%= @event.start_at.strftime("%m/%d/%Y at %I:%M%p") %>
-</p>
+  <p>
+    <b>Leaving for Tahoe:</b>
+    <%= @event.start_at.strftime("%m/%d/%Y at %I:%M%p") %>
+  </p>
 
-<p>
-  <b>Coming back to the Bay:</b>
-  <%= @event.end_at.strftime("%m/%d/%Y at %I:%M%p") %>
-</p>
+  <p>
+    <b>Coming back to the Bay:</b>
+    <%= @event.end_at.strftime("%m/%d/%Y at %I:%M%p") %>
+  </p>
 
-<p>
-  <b>Guests:</b>
-  <%= @event.friends %>
-</p>
+  <p>
+    <b>Guests:</b>
+    <%= @event.friends %>
+  </p>
 
-<p>
-  <b>Carpool seats:</b>
-  <%= @event.carpool_seats %>
-</p>
+  <p>
+    <b>Carpool seats:</b>
+    <%= @event.carpool_seats %>
+  </p>
+</div>
 
-<%= link_to 'Edit This Entry', edit_event_path(@event) %> |
-<%= link_to 'List View', events_path %> |
-<%= link_to 'Calendar View', calendar_path %>
-
+<div class="footer">
+  <%= link_to 'Edit This Entry', edit_event_path(@event) %> |
+  <%= link_to 'List View', events_path %> |
+  <%= link_to 'Calendar View', calendar_path %>
+</div>

@@ -17,19 +17,19 @@
   </div>
   <div class="field">
     <%= f.label :Day_your_heading_up_to_Tahoe %><br />
-    <%= f.datetime_select :start_at %>
+    <%= f.datetime_select :start_at, :ampm => true %>
   </div>
   <div class="field">
     <%= f.label :Day_your_heading_back_to_the_Bay %><br />
-    <%= f.datetime_select :end_at %>
+    <%= f.datetime_select :end_at, :ampm => true, :default => 2.days.from_now %>
   </div>
   <div class="field">
     <%= f.label :Number_of_guests_your_bringing %><br />
-    <%= f.number_field :friends %>
+    <%= f.number_field :friends, :min => 0 %>
   </div>
   <div class="field">
     <%= f.label :Number_of_extra_seats_available_for_carpool %><br />
-    <%= f.number_field :carpool_seats %>
+    <%= f.number_field :carpool_seats, :min => 0 %>
   </div>
   <div class="actions">
     <%= f.submit %>

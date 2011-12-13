@@ -1,31 +1,35 @@
+
 <h1>Ski Lease Calendar - List View</h1>
 <%= link_to 'New Entry', new_event_path, :class => 'button' %>
 
-<table id="events_table">
-  <tr>
-    <th>Person</th>
-    <th>Date heading to Tahoe</th>
-    <th>Date heading back to the Bay</th>
-    <th>Guests</th>
-    <th>Carpool seats</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div class="body">
+  <table id="events_table">
+    <tr>
+      <th>Person</th>
+      <th>Date heading to Tahoe</th>
+      <th>Date heading back to the Bay</th>
+      <th>Guests</th>
+      <th>Carpool seats</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
 
-<% @events.each do |event| %>
-  <tr>
-    <td><%= event.name %></td>
-    <td><%= event.start_at.strftime("%m/%d/%Y at %I:%M%p") %></td>
-    <td><%= event.end_at.strftime("%m/%d/%Y at %I:%M%p") %></td>
-    <td><%= event.friends %></td>
-    <td><%= event.carpool_seats %></td>
-    <td><%= link_to 'Details', event %></td>
-    <td><%= link_to 'Edit', edit_event_path(event) %></td>
-    <td><%= link_to 'Delete', event, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
+  <% @events.each do |event| %>
+    <tr>
+      <td><%= event.name %></td>
+      <td><%= event.start_at.strftime("%m/%d/%Y at %I:%M%p") %></td>
+      <td><%= event.end_at.strftime("%m/%d/%Y at %I:%M%p") %></td>
+      <td><%= event.friends %></td>
+      <td><%= event.carpool_seats %></td>
+      <td><%= link_to 'Details', event %></td>
+      <td><%= link_to 'Edit', edit_event_path(event) %></td>
+      <td><%= link_to 'Delete', event, confirm: 'Are you sure?', method: :delete %></td>
+    </tr>
+  <% end %>
+  </table>
+</div>
 
-<br />
-<%= link_to 'Calendar View', calendar_path %>
+<div class="footer">
+  <%= link_to 'Calendar View', calendar_path %>
+</div>

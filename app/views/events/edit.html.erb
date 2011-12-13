@@ -1,7 +1,12 @@
 <h1>Ski Lease Calendar - Edit Entry</h1>
 
-<%= render 'form' %>
+<div class="body">
+  <%= render 'form' %>
+  <p><%= link_to 'Delete This Entry', @event, confirm: 'Are you sure?', method: :delete %></p>
+</div>
 
-<%= link_to 'Show', @event %> |
-<%= link_to 'Calendar View', calendar_path %> |
-<%= link_to 'List View', events_path %> 
+<div class="footer">
+  <%= link_to 'Show', @event %> |
+  <%= link_to 'Calendar View', calendar_path %> |
+  <%= link_to 'List View', events_path %> 
+</div>
