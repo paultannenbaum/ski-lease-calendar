@@ -27,6 +27,13 @@
     <b>Carpool seats:</b>
     <%= @event.carpool_seats %>
   </p>
+  
+  <% if @event.notes %>
+    <p>
+      <b>Additional Notes:</b>
+      <%= @event.notes %>
+    </p>
+  <% end %>
 </div>
 
 <div class="footer">

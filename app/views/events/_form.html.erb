@@ -31,6 +31,10 @@
     <%= f.label :Number_of_extra_seats_available_for_carpool %><br />
     <%= f.number_field :carpool_seats, :min => 0 %>
   </div>
+  <div class="field">
+    <%= f.label :Any_additional_notes %><br />
+    <%= f.text_area :notes %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
