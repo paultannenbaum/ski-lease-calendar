@@ -28,7 +28,7 @@
     <%= @event.carpool_seats %>
   </p>
   
-  <% if @event.notes %>
+  <% unless @event.notes.blank? %>
     <p>
       <b>Additional Notes:</b>
       <%= @event.notes %>
